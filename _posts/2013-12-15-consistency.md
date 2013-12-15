@@ -117,7 +117,10 @@ things that went into things you've already seen.  This is 1) only
 within the system, so if you call your friend or read from another
 datasource he might have stuff you haven't seen yet 2) requires
 keeping a bunch of state around and 3) I don't think it's even that
-easy to reason about.  For example:
+easy to reason about.  Either the system measures _too much_
+causality, or the developer is required to reason about and tell
+the system what reads should satisfy causal relationships and what
+shouldn't.
 
 ## Sequential Consistency
 
