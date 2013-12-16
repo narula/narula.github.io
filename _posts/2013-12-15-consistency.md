@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "The Intricacies of Consistency"
+title:  "DRAFT -- The Intricacies of Consistency"
 date:   2013-12-15 13:48:14
 categories:
 comments: true
@@ -10,7 +10,7 @@ comments: true
 
 We spend a lot of time discussing consistency trade-offs without
 discussing what consistency really _is_ in different contexts, and why
-it's a even a good idea to begin with.
+it's even a good idea to begin with.
 
 There are three primary contexts that often get conflated when we
 discuss consistency: concurrent processing, distributed consistency,
