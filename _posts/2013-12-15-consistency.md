@@ -10,7 +10,7 @@ comments: true
 
 We spend a lot of time discussing consistency trade-offs without
 discussing what consistency really _is_ in different contexts, and why
-it's a even a good idea to begin with.
+it's even a good idea to begin with.
 
 There are three primary contexts that often get conflated when we
 discuss consistency: concurrent processing, distributed consistency,
@@ -18,18 +18,17 @@ and traditional database consistency and isolation.
 
 # In the beginning, there was a program
 
-First let's talk about the simplest case -- one single-threaded
-process running on one single core machine, reading and writing to
-memory.
+Let's discuss concurrent programming first.  Imagine the the simplest
+case -- one single-threaded process running on one single core
+machine, reading and writing to memory.
 
-Here we get consistency for free (of course this doesn't save us from
-our own programming errors).  All of the process's reads and writes
-are ordered because it is single-threaded, and only one memory
+Here we get consistency for free; all of the process's reads and
+writes are ordered because it is single-threaded, and only one memory
 operation is happening at a time.  In fact only one thing is *ever*
-happening in the system at a time.  The program can assume that all
-its instructions execute as though they are the only things running on
-this machine (because they are) which we call _isolation_.  We don't
-need fancy primitives; life is good.
+happening in the system at a time.  The programmer can assume that all
+of the program's instructions execute as though they are the only
+things running on this machine, because they are.  We call this
+_isolation_.  We don't need fancy primitives; life is good.
 
 # Consistent and Transactional
 
@@ -39,31 +38,35 @@ are leaving half the CPU performance on the table.  So we spawn a copy
 -- two threads, excellent!  This one little action has made our lives
 extremely difficult.  Now we have to reason about all possible
 interleavings of two instances of this program, and consider what
-could go wrong.  Oh and by the way I use a 12 core machine so have fun
-reasoning about your program running on that.  
+could go wrong.  Oh and the more cores the more instances we need, and
+the more interleavings to reason about.
 
 There are two main problems here: One is that on many cores we have
 multiple readers and writers, and in fact data is replicated on
 different L1, L2, and L3 caches.  We want to make sure each program
 appears _sequentially consistent_ -- as though all operations were
-executed in some sequential order, and that global order is consistent
-with each thread's individual order.  Fortunately, on a multi-core
-processor, the cache coherence protocol does most of this for us.
+executed in some sequential order, and that this global sequential
+order is consistent with each thread's individual order.  As an
+example, there should be some order where if Process 1 reads A=2 and
+Process 2 reads A without any intervening writes to A, it should read
+A=2 as well.  Fortunately, on a multi-core processor, the cache
+coherence protocol does most of this for us.
 
-Another problem is that we now might need to lock sequences of reads
-and writes, to make sure we can do things in multiple steps without
-anyone interrupting and changing state out from under us.  We want
-these sets of instructions to execute _transactionally_, or the way
-they would if a given program were the only thing executing on the
-machine.  We also might want the operation to happen _atomically_,
-meaning we either see the whole thing or none of it, never partial
-state. We can use synchronization primitives and hardware
-transactional memory to accomplish this.
+Another problem we have is that we now might want to do multiple reads
+and writes atomically without anyone interrupting and changing state
+out from under us; for example we might want to read and write a
+memory location to decrement a variable.  We want these sets of
+instructions to execute _transactionally_, the way they would if a
+given program were the only thing executing on the machine, and we
+want to either see the result of all the instructions or none of them,
+never partial state. We can use synchronization primitives for the
+first task and something like hardware transactional memory for the
+second.
 
 When we extend these goals to a distributed setting (clients issuing
-reads and writes from different machines) life gets worse.  When we
+reads and writes from different machines) life gets harder.  When we
 extend them to a system where we have _datastores_ running on
-different machines and introduce independent failures life gets so
+different machines and introduce independent failures, life gets so
 hard we begin to wonder if we should have just gone to medical school
 and been a doctor like our parents wanted instead of studying computer
 science.
@@ -73,7 +76,7 @@ techniques to manage the chaos, but were able to describe the
 semantics of what we could get out of our systems under certain
 circumstances, so we can distance ourselves from hideous
 implementations and corner cases of failures to program with those
-blessed things, abstractions and guarantees.
+blessed things, abstractions and guarantees.  
 
 # Consistency Levels
 
@@ -88,7 +91,7 @@ get some idea of how it would read and write your data?
 One thing I think people gloss over here is how isolation works with
 consistency.  The first models I'm going to describe only involve
 ordering between single-key reads and writes.  They say nothing about
-multi-key operations.
+multi-key operations, which are also important.
 
 ## Eventual Consistency, or Really We Should Just Call This Nothing
 
@@ -160,8 +163,11 @@ have two tabs open, or chat with each other.
 
 Those three consistency levels above get a lot of attention, but I
 think what's really critical when programming is this idea of
-isolation.  Can we write code as if our program were the only thing
-running in the system?  How nice would that be?
+isolation.  Can we write code as if there were only one copy of the
+data and we had the only program running in the system?  Usually this
+requirement is too strong; [this
+paper](http://www.pmg.csail.mit.edu/papers/icde00.pdf) does a great
+job precisely defining different levels of isolation.
 
 ## Serializability, or Nope Still Confusing!
 
@@ -175,7 +181,6 @@ The definition of Serializability from Wikipedia (bear with me):
 > Serializability of a schedule means equivalence (in the outcome, the
 > database state, data values) to a serial schedule (i.e., sequential
 > with no transaction overlap in time) with the same transactions.
-
 
 This says A serial schedule.  Just to be clear: This definition says
 NOTHING about the order in which the transactions are issued.
