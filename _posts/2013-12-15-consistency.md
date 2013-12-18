@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "The Intricacies of Consistency"
+title:  "DRAFT -- The Intricacies of Consistency"
 date:   2013-12-15 13:48:14
 categories:
 comments: true
