@@ -6,8 +6,6 @@ categories:
 comments: true
 ---
 
-# What is this about?
-
 We spend a lot of time discussing consistency trade-offs without
 discussing what consistency really _is_ in different contexts, and why
 it's even a good idea to begin with.
@@ -182,16 +180,17 @@ The definition of Serializability from Wikipedia (bear with me):
 > database state, data values) to a serial schedule (i.e., sequential
 > with no transaction overlap in time) with the same transactions.
 
-This says A serial schedule.  Just to be clear: This definition says
+This says *a* serial schedule.  Just to be clear: This definition says
 NOTHING about the order in which the transactions are issued.
 Apparently the client is just shooting off transactions into the
 ether, and the results of their execution will reflect SOME legal
 ordering, and that's that.
 
-So a client can issue T1, receive an "ACK", and then issue T2.  T2 is
-not required to observe the results of T1. Under serializability, the
-server is allowed to REORDER T2 before T1 if it feels like it, client
-be damned.
+So a client can issue write-only transaction T1, receive an "ACK", and
+then issue T2.  T2 is not required to observe the results of T1. Under
+serializability, the server is allowed to REORDER T2 before T1 if it
+feels like it, client be damned (note that the client did not perform
+any reads in T1 and so did not observe any database state).
 
 A funny but true example: under serializability, the database can
 execute a string of transactions sent by the client in reverse order
