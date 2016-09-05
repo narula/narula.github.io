@@ -22,6 +22,10 @@ body {
 h1, h2, h3, h4, h5, h6 {
   font-size: 100%; }
 
+ul, ol {
+  margin-left: 1.35em;
+}
+
 h1 { margin-bottom: 1em; }
 p { margin: 1em 0; }
 
@@ -143,9 +147,9 @@ blockquote {
   padding: 0 .4em;
 }
 
-/*.post ul, .post ol {
+.post ul, .post ol {
   margin-left: 1.35em;
-}*/
+}
 
 .post code {
   border: 1px solid #ddd;
