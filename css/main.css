@@ -24,6 +24,7 @@ h1, h2, h3, h4, h5, h6 {
 
 ul, ol {
   margin-left: 1.35em;
+  margin-top: 0em;
 }
 
 h1 { margin-bottom: 1em; }
