@@ -65,4 +65,7 @@ Interestingly, the blockchain itself might be at risk if a stablecoin which runs
 Additionally, It is unclear how a very large stablecoin might affect the blockchain’s underlying security incentives, especially if miners (or stakers) are processing large stablecoin transactions but are rewarded (or slashed) in amounts denominated in the smaller, less valuable blockchain token. This might cause more incentive for miners or validators to conduct double spend attacks.
 
 There is also a regulatory risk. If stablecoins grow large and are deemed systemically important, an argument could be made that the blockchains they run upon are also systemically important. This might increase attempts to regulate decentralized blockchain networks. 
- 
+
+
+
+<i>Thanks to members of the <a href="http://dci.mit.edu">Digital Currency Initiative</a> for useful conversation and feedback, and in particular Tadge Dryja for raising the point about stablecoins' potential impact on the underlying blockchain. All errors are my own.</i>
