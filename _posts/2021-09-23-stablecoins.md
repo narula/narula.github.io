@@ -1,6 +1,7 @@
 ---
 layout: post
-title:  "Technical Risks of Stablecoins"
+title:  "Neha Narula"
+post_title: "Technical Risks of Stablecoins"
 date:   2021-09-23 13:52:14
 categories:
 comments: true
