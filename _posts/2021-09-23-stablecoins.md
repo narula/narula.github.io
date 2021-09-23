@@ -1,10 +1,10 @@
 ---
 layout: post
-title:  "Neha Narula"
+title:  "Neha's Writings"
 post_title: "Technical Risks of Stablecoins"
 date:   2021-09-23 13:52:14
 categories:
-comments: true
+comments: false
 ---
 
 

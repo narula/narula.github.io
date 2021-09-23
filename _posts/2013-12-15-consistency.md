@@ -1,9 +1,10 @@
 ---
 layout: post
-title:  "DRAFT -- The Intricacies of Consistency"
+title:  "Neha's Writings"
+post_title:  "DRAFT -- The Intricacies of Consistency"
 date:   2013-12-15 13:48:14
 categories:
-comments: true
+comments: false
 ---
 
 We spend a lot of time discussing consistency trade-offs without
