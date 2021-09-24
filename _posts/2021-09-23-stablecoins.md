@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Neha's Writings"
-post_title: "Technical Risks of Stablecoins"
+post_title: "The Technology Underlying Stablecoins"
 date:   2021-09-23 13:52:14
 categories:
 comments: false
@@ -12,7 +12,7 @@ The term “stablecoin” typically refers to tokens issued on a blockchain whic
 
 [^1]: [Messari](https://messari.io/screener) lists USDT at 71B, but [Coinmarketcap](https://coinmarketcap.com/) says $69 as of September 24, 2021.
 
-There is generally a reasonable understanding of the financial risks involved in stablecoins, particularly around whether the stablecoin is fully backed, and the liquidity of those assets backing it. What I have not heard discussed are the technical risks associated with stablecoins, which is what this post covers. I specifically focus on stablecoins issued by a centralized entity who custodies backing assets, not decentralized algorithmic stablecoins (such as Dai, issued by MakerDAO), though some of these issues apply to those stablecoins as well.
+There is generally a reasonable understanding of the financial risks involved in stablecoins, particularly around whether the stablecoin is fully backed, and the liquidity of those assets backing it. What I have not heard discussed are the technical risks associated with stablecoins, which is what this post covers. I specifically focus on stablecoins issued by a centralized entity who custodies backing assets, not algorithmic stablecoins (such as Dai, issued by MakerDAO), though some of these issues apply to those stablecoins as well.
 
 Even centralized stablecoins operate as software running on decentralized blockchains, and it’s important to keep in mind that stablecoins involve layers of software that are not used in traditional financial institution activity. If this software doesn’t operate safely and securely, or if the decentralized networks don’t operate as expected, there could be a loss of confidence in the stablecoin or even outright theft. As it stands now, regulators, issuers, and users of a stablecoin need to understand stablecoin software and the underlying blockchain platforms they run on in order to accurately measure technical and operational risk.
 
@@ -49,7 +49,7 @@ Miners or validators might collude to actively censor or prevent certain transac
 
 # The stablecoin smart contract
 
-On Ethereum and some other blockchains, each stablecoin has its own set of smart contracts. These contracts control the issuance, redemption, transfer, and blacklisting of the stablecoin tokens issued on this blockchain. These smart contracts are critical to tracking stablecoin ownership. There have been many cases of funds being frozen or hacked in smart contracts;[^11] as such there needs to be processes in place for auditing this software and understanding the upgrade and deployment process (note that this is a completely different task from auditing the composition of the backing reserves). There should be a recovery process plan in place for if the contract is hacked. 
+On Ethereum and some other blockchains, each stablecoin has its own set of smart contracts. These contracts control the issuance, redemption, transfer, and blacklisting (for example, due to sanctions compliance) of the stablecoin tokens issued on this blockchain. These smart contracts are critical to tracking stablecoin ownership. There have been many cases of funds being frozen or hacked in smart contracts;[^11] as such there needs to be processes in place for auditing this software and understanding the upgrade and deployment process (note that this is a completely different task from auditing the composition of the backing reserves). There should be a recovery process plan in place for if the contract is hacked. 
 
 [^11]: O’Leary, Rachel-Rose. [Brain Freeze? Parity Bug Continues With No Easy Solution in Sight](https://www.coindesk.com/markets/2017/11/24/brain-freeze-parity-bug-continues-with-no-easy-solution-in-sight/). Coindesk, November 24, 2017. 
 
