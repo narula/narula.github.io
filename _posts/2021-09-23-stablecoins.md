@@ -8,7 +8,7 @@ comments: false
 ---
 
 
-The term “stablecoin” typically refers to tokens issued on a blockchain which are designed to maintain a stable value with respect to an existing currency, for example the dollar. The largest stablecoins currently are Tether and USDC, with market capitalizations of $69B and $30B, respectively.[^1]
+The term “stablecoin” typically refers to tokens issued on a blockchain which are designed to maintain a stable value with respect to an existing currency, for example the dollar. The largest stablecoins currently are Tether and USDC, with total token values $69B and $30B, respectively.[^1]
 
 [^1]: [Messari](https://messari.io/screener) lists USDT at 71B, but [Coinmarketcap](https://coinmarketcap.com/) says $69 as of September 24, 2021.
 
@@ -79,6 +79,10 @@ Interestingly, the blockchain itself might be at risk if a stablecoin which runs
 Additionally, it is unclear how a very large stablecoin might affect the blockchain’s underlying security incentives, especially if miners (or stakers) are processing large stablecoin transactions but are rewarded (or slashed) in amounts denominated in the smaller, less valuable blockchain token. This might cause more incentive for miners or validators to conduct double spend attacks.
 
 There is also a regulatory risk. If stablecoins grow large and are deemed systemically important, an argument could be made that the blockchains they run upon are also systemically important. This might increase attempts to regulate decentralized blockchain networks. 
+
+# Conclusion
+
+This might come off as critical of decentralized blockchains. To be clear, I think this area is enormously exciting and has a lot of potential, and I don't really see how stablecoins that run on permissioned blockchains or private networks have anything new to offer. However, it's clear that many of those deciding if and how to regulate centralized stablecoins do not necessarily have access to unbiased information on how the various technologies work, nor the threat models behind them.
 
 
 <i>Thanks to members of the <a href="http://dci.mit.edu">Digital Currency Initiative</a> and others for useful conversation and feedback, and in particular Tadge Dryja for raising the point about stablecoins' potential impact on the underlying blockchain. All errors are my own.</i>
