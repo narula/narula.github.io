@@ -81,6 +81,6 @@ Additionally, it is unclear how a very large stablecoin might affect the blockch
 There is also a regulatory risk. If stablecoins grow large and are deemed systemically important, an argument could be made that the blockchains they run upon are also systemically important. This might increase attempts to regulate decentralized blockchain networks. 
 
 
-<i>Thanks to members of the <a href="http://dci.mit.edu">Digital Currency Initiative</a> for useful conversation and feedback, and in particular Tadge Dryja for raising the point about stablecoins' potential impact on the underlying blockchain. All errors are my own.</i>
+<i>Thanks to members of the <a href="http://dci.mit.edu">Digital Currency Initiative</a> and others for useful conversation and feedback, and in particular Tadge Dryja for raising the point about stablecoins' potential impact on the underlying blockchain. All errors are my own.</i>
 
 <br>
