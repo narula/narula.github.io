@@ -8,7 +8,7 @@ comments: false
 ---
 
 
-The term “stablecoin” typically refers to tokens issued on a blockchain which are designed to maintain a stable value with respect to an existing currency, for example the dollar. The largest stablecoins currently are Tether and USDC, with total token values $69B and $30B, respectively.[^1]
+The term “stablecoin” typically refers to tokens issued on a blockchain which are designed to maintain a stable value with respect to an existing currency, for example the dollar. The largest stablecoins currently are Tether and USDC, with total token values of $69B and $30B, respectively.[^1]
 
 [^1]: [Messari](https://messari.io/screener) lists USDT at 71B, but [Coinmarketcap](https://coinmarketcap.com/) says $69 as of September 24, 2021.
 
