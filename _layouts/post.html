@@ -9,24 +9,28 @@ layout: default
 </div>
 
 {% if page.comments %}
-<div id="disqus_thread"></div>
-<script type="text/javascript">
-  var disqus_shortname = 'nehaswritings'; // required: replace example with your forum shortname
- 
-  (function() {
-  var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
-  dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
-  (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
-  })();
-</script>
-<noscript>
-  Please enable JavaScript to view
-  the <a href="http://disqus.com/?ref_noscript">comments powered by
-  Disqus.</a>
-</noscript>
-<a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+<div id="cusdis_thread"
+  data-host="https://cusdis.com"
+  data-app-id="e16f21e1-adb6-4d8f-9b8e-b71daa54cf75"
+  data-page-id="{{ page.url | slugify }}"
+  data-page-url="{{ page.url | absolute_url }}"
+  data-page-title="{{ page.title }}"
+></div>
+<script async defer src="https://cusdis.com/js/cusdis.es.js"></script>
 
+<script>
+  window.addEventListener('message', function (event) {
+    if (event.origin !== 'https://cusdis.com') return;
+    if (event.data && event.data.type === 'cusdis-resize') {
+      const iframe = document.querySelector('#cusdis_thread iframe');
+      if (iframe && event.data.height) {
+        iframe.style.height = event.data.height + 'px';
+      }
+    }
+  });
+</script>
 {% endif %}
+
 
 <script>
   (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){

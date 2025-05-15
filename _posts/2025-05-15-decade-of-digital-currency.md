@@ -4,6 +4,7 @@ title:  "Neha's Writings"
 post_title: "A Decade of Digital Currency at MIT"
 date: 2025-05-15 12:00:00 -0400
 categories:
+comments: true
 ---
 
 # Gold vaults

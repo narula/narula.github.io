@@ -187,3 +187,12 @@ blockquote {
   display: block;
   margin: 1em auto;
 }
+
+#cusdis_thread iframe {
+  width: 100% !important;
+  border: none;
+  display: block;
+  height: auto;
+  min-height: 300px;
+  overflow: visible;
+}
