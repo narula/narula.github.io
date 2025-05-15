@@ -192,7 +192,11 @@ blockquote {
   width: 100% !important;
   border: none;
   display: block;
-  height: auto;
-  min-height: 300px;
+  height: auto !important;
+  min-height: 600px;
   overflow: visible;
+}
+
+#cusdis_thread {
+  margin-top: 6em;
 }

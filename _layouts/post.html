@@ -9,26 +9,17 @@ layout: default
 </div>
 
 {% if page.comments %}
+
 <div id="cusdis_thread"
-  data-host="https://cusdis.com"
-  data-app-id="e16f21e1-adb6-4d8f-9b8e-b71daa54cf75"
-  data-page-id="{{ page.url | slugify }}"
-  data-page-url="{{ page.url | absolute_url }}"
-  data-page-title="{{ page.title }}"
-></div>
+     data-host="https://cusdis.com"
+     data-app-id="e16f21e1-adb6-4d8f-9b8e-b71daa54cf75"
+     data-page-id="{{ page.url | slugify }}"
+     data-page-url="{{ page.url | absolute_url }}"
+     data-page-title="{{ page.title }}">
+</div>
+
 <script async defer src="https://cusdis.com/js/cusdis.es.js"></script>
 
-<script>
-  window.addEventListener('message', function (event) {
-    if (event.origin !== 'https://cusdis.com') return;
-    if (event.data && event.data.type === 'cusdis-resize') {
-      const iframe = document.querySelector('#cusdis_thread iframe');
-      if (iframe && event.data.height) {
-        iframe.style.height = event.data.height + 'px';
-      }
-    }
-  });
-</script>
 {% endif %}
 
 
