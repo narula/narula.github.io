@@ -23,8 +23,7 @@ h1, h2, h3, h4, h5, h6 {
   font-size: 100%; }
 
 ul, ol {
-  margin-left: 1.35em;
-  margin-top: -1em;
+  margin-left: 1.5em;
 }
 
 h1 { margin-bottom: 1em; }
@@ -149,7 +148,8 @@ blockquote {
 }
 
 .post ul, .post ol {
-  margin-left: 1.35em;
+  margin-left: 1.5em;
+  margin-bottom: 1em;
 }
 
 .post code {
@@ -173,11 +173,25 @@ blockquote {
   background-color: #333;
 }
 
+.post h1,
+.post h2,
+.post h3,
+.post h4,
+.post h5,
+.post h6 {
+  margin-top: 2em;
+  margin-bottom: 0.5em;
+}
+
 .post h1 {
-  font-size: 130%;
+  font-size: 150%;
 }
 
 .post h2 {
+  font-size: 120%;
+}
+
+.post h3 {
   font-size: 100%;
 }
 
