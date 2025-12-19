@@ -16,7 +16,6 @@ body {
   background-color: #FFF;
   font: 13.34px Helvetica, Arial, sans-serif;
   font-size: small;
-  text-align: center;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -65,9 +64,9 @@ blockquote {
 
 .site {
   font-size: 115%;
-  text-align: justify;
-  width: 42em;
-  margin: 3em auto 2em;
+  max-width: 42em;
+  margin: 2em auto;
+  padding: 0 1.25em;
   line-height: 1.5em;
 }
 
@@ -213,4 +212,22 @@ blockquote {
 
 #cusdis_thread {
   margin-top: 6em;
+}
+
+
+@media (max-width: 600px) {
+  .site {
+    margin: 1.5em auto;
+    padding: 0 1.5em;
+  }
+
+  .title {
+    margin-bottom: 1.5em;
+  }
+
+  .footer .contact {
+    float: none;
+    margin-right: 0;
+    margin-bottom: 1em;
+  }
 }
