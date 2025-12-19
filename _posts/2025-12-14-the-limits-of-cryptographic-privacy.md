@@ -28,7 +28,7 @@ computation, fully homomorphic encryption. I work on some of these
 technologies, and they are extraordinary. But we need to be precise
 about what they can and cannot do.
 
-# The Limits of Cryptographic Privacy
+# Limits
 
 Take zero-knowledge proofs. They let you show that a computation was
 carried out correctly without revealing the underlying data.  Yet they
@@ -47,7 +47,7 @@ honestly, that's a feature, not a bug. In the real world we still
 depend on people and organizations, and reality to define what data is
 "correct."
 
-# Privacy Tech as a Tool for Control?
+# Privacy tech as a tool for control?
 
 Here's what worries me most: if used unwisely, instead of reinforcing
 autonomy, these cryptographic tools may help replace it with automated
@@ -69,7 +69,7 @@ turns into continuous permissioning. We could end up in a world where
 constant proving replaces constant disclosure. The information is
 hidden, but the control remains.
 
-# Why Markets Won't Save Us
+# Why markets won't save us
 
 Even if we get the technology and rules around how to use it right,
 technology does not operate in a vacuum. Unfortunately, markets don't
@@ -80,7 +80,7 @@ data, the better the results, and the more users prefer the less
 private service.  So even if we have the right technology, the reality
 of market forces means it might not get adopted.
 
-# Where Policy Can Help
+# Where policy can help
 
 This is why the mere existence of technology is not enough. Privacy
 requires not just good cryptography, but good law. We have to work
