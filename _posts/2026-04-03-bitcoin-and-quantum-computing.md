@@ -51,7 +51,7 @@ Even if you don’t really care about the Bitcoin price, a lot of the above thin
 
 ## Moving forward
 
-The best way to eliminate this existential threat is to make B zero and upgrade Bitcoin to post-quantum cryptography as soon as safely possible, specifically the supported signature schemes. The good news is PQ signature schemes exist and are usable! The bad news is there are many other valid things to worry about, so it’s not as simple as it sounds. I want to be clear that there are a few people doing important work in this area, but as far as I know it’s a very, very small number. As of today the remaining questions remained unanswered: 
+The best way to eliminate this existential threat is to make B zero and upgrade Bitcoin to post-quantum cryptography as soon as safely possible, specifically the supported signature schemes. The good news is PQ signature schemes exist and are usable! The bad news is there are many other valid things to worry about, so it’s not as simple as it sounds. I want to be clear that there are a few people doing important work in this area, but as far as I know it’s a very, very small number. As of today these questions remain unanswered: 
 
 * **Which specific signature scheme(s) should we use in Bitcoin?** Unclear. Most of these schemes produce significantly larger signatures or require longer to verify. Choosing non-optimally might have downsides, like significantly increasing the cost to run a node, throttling Bitcoin’s supported number of transactions per second and available blockspace, or limiting future Bitcoin functionality like signature aggregation.
 * **How should consensus consider transactions spending UTXOs that haven’t upgraded to PQ-schemes?** Even more unclear. Choosing badly on this front might violate Bitcoin’s core principles, thereby reducing trust in Bitcoin’s narrative of self-sovereignty and scarcity, or could render the economic security of Bitcoin mining unsound.
@@ -80,7 +80,7 @@ A: Sometimes your intuitions in one area don’t apply in another area. Turns ou
 
 > Once you understand quantum fault-tolerance, asking “so when are you going to factor 35 with Shor’s algorithm?” becomes sort of like asking the Manhattan Project physicists in 1943, “so when are you going to produce at least a *small* nuclear explosion?”
 
-More on why this is the wrong intuition and waiting till they can factor larger and larger numbers means you’ll be too late: https://bas.westerbaan.name/notes/2026/04/02/factoring.html. 
+[More](https://bas.westerbaan.name/notes/2026/04/02/factoring.html) on why this is the wrong intuition and waiting till CRQC's can factor larger and larger numbers might be the wrong strategy. 
 
 Q: A CRQC also breaks banking, military communications, and most of the internet today! If one appears, isn’t Bitcoin the least of our problems?
 
@@ -114,5 +114,8 @@ A: So far not much! Trying to inform myself, encouraging other people who are wo
 
 What are you doing about it?
 
+# Acknowledgements
+
+Thanks to Ethan Heilman for feedback. No endorsement implied, all mistakes are my own.
 
 # Footnotes
