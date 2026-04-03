@@ -2,7 +2,7 @@
 layout: post
 title:  "Neha's Writings"
 post_title: "Bitcoin and Quantum Computing"
-date:   2025-04-03 12:42:14
+date:   2026-04-03 12:42:14
 categories:
 comments: true
 ---
