@@ -39,7 +39,7 @@ Let’s put in some example numbers: Google [recently introduced a timeline for 
 
 [^3]:  Given what I’m seeing on X these days and the lack of developers working on it right now I think I’m being REALLY generous here.
 
-## How to think about this an an investor
+## How to think about this as an investor
 
 I personally care more about using Bitcoin than its price, but I know many of you do care about Bitcoin’s price and this has implications on it: This probability of Bitcoin no longer working is a floor for how much you should value Bitcoin at $0. There are many additional reasons to potentially value Bitcoin at $0, which is why I say floor. This should additively combine with all the other types of uncertainty you have about Bitcoin’s continued successful operation: keys might get stolen or hacked (yours or someone else’s, like Coinbase’s), Ethereum might overtake Bitcoin’s narrative as digital gold and render it irrelevant, someone might partition the network and conduct numerous destructive double spend attacks, cryptoeconomic security might break down by 2140 when the block reward drops to 0 and we have continuous block sniping attacks, etc etc etc…
 
