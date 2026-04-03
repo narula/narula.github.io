@@ -116,7 +116,7 @@ What are you doing about it?
 
 # Acknowledgements
 
-Thanks to Ethan Heilman for feedback. No endorsement implied, all mistakes are my own.
+Thanks to Ethan Heilman for feedback and many conversations on these topics. No endorsement implied, all mistakes are my own.
 
 *Edit*: A previous version of this post mistakenly cited the Google paper as saying "there is a 10% likelihood of a CRQC (can break a Bitcoin ECDSA or Schnorr key with reasonable likelihood in 9 minutes) by 2029 (A=.1)." That's been corrected above; the Google paper did not make this claim, an author on the paper did for 2030. Thanks to [@UnseenNight](https://x.com/unseennight) for pointing this out!
 
