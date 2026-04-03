@@ -84,7 +84,7 @@ A: Sometimes your intuitions in one area don’t apply in another area. Turns ou
 
 **Q: A CRQC also breaks banking, military communications, and most of the internet today! If one appears, isn’t Bitcoin the least of our problems?**
 
-A: True! Banking software, military communications, and the internet also need to be upgraded. I have high confidence they will, successfully (I’d put my B_{HTTPS} at close to 1). Unfortunately, I have less confidence that Bitcoin will upgrade successfully since upgrading a decentralized system of honey-badger-like participants is much more challenging and people like the questioner seem to think this is a valid argument that we shouldn’t even worry about it?
+A: True! Banking software, military communications, and the internet also need to be upgraded. I have high confidence they will be, successfully (I’d put my B_{HTTPS} at close to 1). Unfortunately, I have less confidence that Bitcoin will upgrade successfully since upgrading a decentralized system of honey-badger-like participants is much more challenging and people like the questioner seem to think this is a valid argument that we shouldn’t even worry about it?
 
 If you disagree and think there will be a CRQC and the rest of the internet won’t upgrade successfully, maybe you should consider shorting the stock market and buying gold. But not Bitcoin, because if we do nothing that won’t work anymore. Not investment advice.
 
@@ -92,17 +92,17 @@ If you disagree and think there will be a CRQC and the rest of the internet won�
 
 A:  It’s possible for the following two things to both be true: “Google wants to destroy Bitcoin” AND “Google’s paper is technically sound”. The former does not negate the latter. 
 
-I personally do not think Google cares much about Bitcoin outside of thinking it’s a great use case to demonstrate quantum prowess, but if you’d like to bet on the following: 1) This result is a psyops by Google to take Bitcoin down, and 2) they’re willing to compromise their reputation by putting out a paper with no actual technical merit, you do you.
+I personally do not think Google cares much about Bitcoin outside of thinking it’s a great use case to demonstrate quantum prowess, but if you’d like to bet both that (1) this result is a psyops by Google to take Bitcoin down, and (2) all the authors are willing to compromise their reputations by putting out a paper with no actual technical merit, you do you.
 
 **Q: Even if Google (or a nation-state) had a CRQC, why would they steal Bitcoin? Everyone would see it and it would tank the price!**
 
 A: It’s pretty hard to speculate with any level of accuracy about how exactly a CRQC adversary would or would not engage with Bitcoin. There could be many motivations for various action paths, including an incentive to keep the CRQC secret and not touch Bitcoin for a while. You should factor your beliefs about this into your A. I think the real point is that in the presence of a CRQC, Bitcoin’s signatures are broken, and we cannot rule out the worst case (or even articulate the entire adversary strategy space). 
 
-**Q: Stealing is illegal, so why would anyone steal Bitcoin?**
+**Q: Stealing is illegal, so why would anyone use a CRQC to steal Bitcoin?**
 
 A: If you truly believe this, you really should value Bitcoin at 0 -- it has many unnecessary components with a lot of overhead, like proof-of-work and digital signatures.
 
-**Q: Bitcoin will figure this out. They have fixed things in the past.**
+**Q: Bitcoin will figure this out. The "developers" have fixed things in the past.**
 
 A: OK, great. How? Who is doing this? What’s the plan? Which primitives? Why those over others? Where is the discussion and resolution of the tradeoffs I mention above beyond a few threads on the mailing list? Do you agree with everything in [BIP 360](https://github.com/bitcoin/bips/blob/master/bip-0360.mediawiki)? If not, what are your concerns and what do you propose instead? What do we do with P2PK coins that are vulnerable and probably won’t move, like Satoshi’s? Where are the designs, BIPs, implementations, and evaluations of various options?
 
