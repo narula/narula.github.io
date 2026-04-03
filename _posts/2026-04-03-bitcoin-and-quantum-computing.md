@@ -35,7 +35,7 @@ A CRQC is a (you might believe low-likehood) existential threat to Bitcoin’s e
 (A) How likely you think it is a CRQC appears by a given time, multiplied by <br>
 (B) How likely it is you think Bitcoin will not successfully upgrade by that time. 
 
-Let’s put in some example numbers: The [recent Google paper](https://arxiv.org/abs/2603.28846) says there is a 10% likelihood of a CRQC (can break a Bitcoin ECDSA or Schnorr key with reasonable likelihood in 9 minutes) by 2029 (A=.1). The last soft fork in Bitcoin (taproot) took 3 years and 10 months from proposal to activation. Maybe there’s a 50% chance we could successfully roll out some as-yet-unknown PQ soft fork by 2029 (B=.5).[^3] If you believe these numbers there is at least a 5% chance (0.1*0.5=0.05) you should expect Bitcoin to no longer work due to a CRQC in 2029. 
+Let’s put in some example numbers: Google [recently introduced a timeline for moving to PQC by 2029](https://blog.google/innovation-and-ai/technology/safety-security/cryptography-migration-timeline/) and a coauthor on [a recent Google Quantum paper](https://arxiv.org/abs/2603.28846) [suggested he wouldn't bet against a 10% chance of a CRQC existing by 2030](https://x.com/CraigGidney/status/2036850592375841249) (A=.1). The last soft fork in Bitcoin (taproot) took 3 years and 10 months from proposal to activation. Maybe there’s a 50% chance we could successfully roll out some as-yet-unknown PQ soft fork by 2029 (B=.5).[^3] If you believe these numbers there is at least a 5% chance (0.1*0.5=0.05) you should expect Bitcoin to no longer work due to a CRQC in 2030. 
 
 [^3]:  Given what I’m seeing on X these days and the lack of developers working on it right now I think I’m being REALLY generous here.
 
@@ -72,7 +72,7 @@ But there’s also some truth to what’s going on. You have to filter out what�
 
 **Q: Isn’t there a chance a CRQC might never exist?**
 
-A: Yes! Totally! But the word “might” is doing a lot of heavy lifting here. Unfortunately for Bitcoin there is also a non-trivial chance one will exist. Like I said above, according to quantum computing researchers at Google, a 10% chance by 2029. To be clear, there will need to be a lot of work done and crazy advances made before one exists, and this is why A is not 1 for any short time frames. But I have found it’s not wise to bet against smart people figuring things out. For the reasons I described already, I think this chance is significant enough to warrant preparing for it if you still want Bitcoin to work.
+A: Yes! Totally! But the word “might” is doing a lot of heavy lifting here. Unfortunately for Bitcoin there is also a non-trivial chance one will exist. Like I said above, [according to a quantum computing researcher at Google](https://x.com/CraigGidney/status/2036850592375841249), a 10% chance by 2030. To be clear, there will need to be a lot of work done and crazy advances made before one exists, and this is why A is not 1 for any short time frames. But I have found it’s not wise to bet against smart people figuring things out. For the reasons I described already, I think this chance is significant enough to warrant preparing for it if you still want Bitcoin to work.
 
 **Q: Yeah ok but they can’t even factor 21 yet. Why should we do anything now?**
 
