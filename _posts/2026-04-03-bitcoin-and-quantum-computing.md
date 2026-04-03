@@ -64,17 +64,17 @@ I think investors are also probably going to listen to the experts and price in 
 
 ## Some common “counterarguments”
 
-Q: A quantum computer destroying Bitcoin is FUD.
+**Q: A quantum computer destroying Bitcoin is FUD.**
 
 A: There certainly are many untrue claims out there, and it’s very frustrating to see [headlines](https://x.com/coinbureau/status/2038856197080785307) like “⚠️GOOGLE SAYS A QUANTUM ATTACK ON BITCOIN TAKES JUST 9 MINS WITH A 41% SUCCESS RATE” (this is not true. you cannot attack Bitcoin this way today).
 
 But there’s also some truth to what’s going on. You have to filter out what’s just plain incorrect, on both sides. Calling everything FUD is lazy and unhelpful.
 
-Q: Isn’t there a chance a CRQC might never exist?
+**Q: Isn’t there a chance a CRQC might never exist?**
 
 A: Yes! Totally! But the word “might” is doing a lot of heavy lifting here. Unfortunately for Bitcoin there is also a non-trivial chance one will exist. Like I said above, according to quantum computing researchers at Google, a 10% chance by 2029. To be clear, there will need to be a lot of work done and crazy advances made before one exists, and this is why A is not 1 for any short time frames. But I have found it’s not wise to bet against smart people figuring things out. For the reasons I described already, I think this chance is significant enough to warrant preparing for it if you still want Bitcoin to work.
 
-Q: Yeah ok but they can’t even factor 21 yet. Why should we do anything now?
+**Q: Yeah ok but they can’t even factor 21 yet. Why should we do anything now?**
 
 A: Sometimes your intuitions in one area don’t apply in another area. Turns out this is simply the wrong way to think about quantum computing progress. I think [Scott puts it well](https://scottaaronson.blog/?p=9665#comment-2029013):
 
@@ -82,35 +82,35 @@ A: Sometimes your intuitions in one area don’t apply in another area. Turns ou
 
 [More](https://bas.westerbaan.name/notes/2026/04/02/factoring.html) on why this is the wrong intuition and waiting till CRQC's can factor larger and larger numbers might be the wrong strategy. 
 
-Q: A CRQC also breaks banking, military communications, and most of the internet today! If one appears, isn’t Bitcoin the least of our problems?
+**Q: A CRQC also breaks banking, military communications, and most of the internet today! If one appears, isn’t Bitcoin the least of our problems?**
 
 A: True! Banking software, military communications, and the internet also need to be upgraded. I have high confidence they will, successfully (I’d put my B_{HTTPS} at close to 1). Unfortunately, I have less confidence that Bitcoin will upgrade successfully since upgrading a decentralized system of honey-badger-like participants is much more challenging and people like the questioner seem to think this is a valid argument that we shouldn’t even worry about it?
 
 If you disagree and think there will be a CRQC and the rest of the internet won’t upgrade successfully, maybe you should consider shorting the stock market and buying gold. But not Bitcoin, because if we do nothing that won’t work anymore. Not investment advice.
 
-Q: This is probably just Google trying to destroy Bitcoin.
+**Q: This is probably just Google trying to destroy Bitcoin.**
 
 A:  It’s possible for the following two things to both be true: “Google wants to destroy Bitcoin” AND “Google’s paper is technically sound”. The former does not negate the latter. 
 
 I personally do not think Google cares much about Bitcoin outside of thinking it’s a great use case to demonstrate quantum prowess, but if you’d like to bet on the following: 1) This result is a psyops by Google to take Bitcoin down, and 2) they’re willing to compromise their reputation by putting out a paper with no actual technical merit, you do you.
 
-Q: Even if Google (or a nation-state) had a CRQC, why would they steal Bitcoin? Everyone would see it and it would tank the price!
+**Q: Even if Google (or a nation-state) had a CRQC, why would they steal Bitcoin? Everyone would see it and it would tank the price!**
 
 A: It’s pretty hard to speculate with any level of accuracy about how exactly a CRQC adversary would or would not engage with Bitcoin. There could be many motivations for various action paths, including an incentive to keep the CRQC secret and not touch Bitcoin for a while. You should factor your beliefs about this into your A. I think the real point is that in the presence of a CRQC, Bitcoin’s signatures are broken, and we cannot rule out the worst case (or even articulate the entire adversary strategy space). 
 
-Q: Stealing is illegal, so why would anyone steal Bitcoin?
+**Q: Stealing is illegal, so why would anyone steal Bitcoin?**
 
 A: If you truly believe this, you really should value Bitcoin at 0 -- it has many unnecessary components with a lot of overhead, like proof-of-work and digital signatures.
 
-Q: Bitcoin will figure this out. They have fixed things in the past.
+**Q: Bitcoin will figure this out. They have fixed things in the past.**
 
 A: OK, great. How? Who is doing this? What’s the plan? Which primitives? Why those over others? Where is the discussion and resolution of the tradeoffs I mention above beyond a few threads on the mailing list? Do you agree with everything in [BIP 360](https://github.com/bitcoin/bips/blob/master/bip-0360.mediawiki)? If not, what are your concerns and what do you propose instead? What do we do with P2PK coins that are vulnerable and probably won’t move, like Satoshi’s? Where are the designs, BIPs, implementations, and evaluations of various options?
 
-Q: Well what are you doing about it?
-
-A: So far not much! Trying to inform myself, encouraging other people who are working on it, and writing this post to hopefully convince more people to work on it. My work on Bitcoin is through my role at MIT running [DCI](dci.mit.edu). Maybe we should try to work on some of the technical challenges, or fundraise and hire people to work on this specifically. Should we? Are you interested?[^4]
+**Q: Well what are you doing about it?[^4]**
 
 [^4]: I think it’s totally fair to call this sort of thing out, but will also note that it doesn’t engage with or invalidate any of the actual arguments.
+
+A: So far not much! Trying to inform myself, encouraging other people who are working on it, and writing this post to hopefully convince more people to work on it. My work on Bitcoin is through my role at MIT running [DCI](dci.mit.edu). Maybe we should try to work on some of the technical challenges, or fundraise and hire people to work on this specifically. Should we? Are you interested?
 
 What are you doing about it?
 
