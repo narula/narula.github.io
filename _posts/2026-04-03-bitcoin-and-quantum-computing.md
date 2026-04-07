@@ -33,7 +33,7 @@ An important implication if you believe the, I think, pretty reasonable previous
 A CRQC is an existential threat to Bitcoin (you might believe this is very low-likehood). Your measurement of this threat should literally be: 
 
 (A) How likely you think it is a CRQC appears by a given time, multiplied by <br>
-(B) How likely it is you think Bitcoin will not successfully upgrade by that time. 
+(B) How likely it is you think Bitcoin will **not** successfully upgrade by that time. 
 
 Let’s put in some example numbers: Google [recently introduced a timeline for moving to PQC by 2029](https://blog.google/innovation-and-ai/technology/safety-security/cryptography-migration-timeline/) and a coauthor on [a recent Google Quantum paper](https://arxiv.org/abs/2603.28846) [suggested he wouldn't bet against a 10% chance of a CRQC existing by 2030](https://x.com/CraigGidney/status/2036850592375841249) (A=.1). The last soft fork in Bitcoin (taproot) took 3 years and 10 months from proposal to activation. It was several more months ([sometimes years](https://www.investing.com/news/cryptocurrency-news/coinbase-finally-activates-support-for-bitcoin-taproot-transfers-details-3656339)) before wallets and large exchanges started supporting Taproot. Maybe there’s a 50% chance we could successfully roll out some as-yet-unknown PQ soft fork + wallet upgrade + migration by 2029 (B=.5).[^3] If you believe these numbers there is at least a 5% chance (0.1*0.5=0.05) you should expect Bitcoin to no longer work due to a CRQC in 2030. 
 
