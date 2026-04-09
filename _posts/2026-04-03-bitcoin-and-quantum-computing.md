@@ -122,4 +122,6 @@ Thanks to Ethan Heilman for feedback and many conversations on these topics. No 
 
 **Edit 4/4/2026**: Thanks to Troy Cross for pointing out this post made it sound like most of the time and effort in upgrading Bitcoin to be PQ is figuring out and activating a PQ soft fork. There's still a lot to be done after that to make coins safe, like upgrading wallets and exchanges, and actually moving coins on the blockchain. Made that clearer above, though it deserves more discussion and I might update this post or write another one later.
 
+**Edit 4/9/2026**: You might like [this post by cryptography engineer Filippo Valsorda](https://words.filippo.io/crqc-timeline/). There is overlap with my post, probably because we appear to be in violent agreement.
+
 # Footnotes
