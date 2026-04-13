@@ -84,7 +84,7 @@ A: Sometimes your intuitions in one area don’t apply in another area. Turns ou
 
 **Q: A CRQC also breaks banking, military communications, and most of the internet today! If one appears, isn’t Bitcoin the least of our problems?**
 
-A: True! Banking software, military communications, and the internet also need to be upgraded. I have high confidence they will be, successfully (I’d put my B_{HTTPS}, the odds that HTTP will not upgrade in time, at close to 0). Unfortunately, I have less confidence that Bitcoin will upgrade successfully since upgrading a decentralized system of honey-badger-like participants is much more challenging and people like the questioner seem to think this is a valid argument that we shouldn’t even worry about it?
+A: True! Banking software, military communications, and the internet also need to be upgraded. I have high confidence they will be, successfully (I’d put my B_{HTTPS}, the odds that HTTPS will not upgrade in time, at close to 0). Unfortunately, I have less confidence that Bitcoin will upgrade successfully since upgrading a decentralized system of honey-badger-like participants is much more challenging and people like the questioner seem to think this is a valid argument that we shouldn’t even worry about it?
 
 If you disagree and think there will be a CRQC and the rest of the internet won’t upgrade successfully, maybe you should consider shorting the stock market and buying gold. But not Bitcoin, because if we do nothing that won’t work anymore. Not investment advice.
 
