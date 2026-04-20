@@ -29,7 +29,7 @@ So what should we do now, in my opinion?
 
 If this is done, it gives Bitcoin users the ability to move their coins to a safe output type immediately, having confidence their coins are safe even if a powerful CRQC appears, without worrying about future softforks.
 
-The best candidate for this I have seen so far is P2MR (BIP 360). Launched in conjunction with a new PQ signature opcode, it gives us the ability to say: Move your coins to this output type, and as long as you do not reveal your non-PQ-safe public key (do not reuse addresses):
+The best candidate for this I have seen so far is P2MR (BIP 360) in conjunction with a new PQ signature opcode and cryptographic agility (multiple branches with different signature schemes). This combination gives us the ability to say: Move your coins to this output type, and as long as you do not reveal your non-PQ-safe public key (do not reuse addresses):
 
 * Your coins will be safe in the presence of a CRQC, even if there is no future soft fork to Bitcoin (for both short and long exposure attacks!)
 * You can continue to use small, fast ECDSA or Schnorr signatures to move your coins for as long as a CRQC is not on the immediate horizon (and your coins are still PQ-safe!)
