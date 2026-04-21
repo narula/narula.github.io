@@ -29,7 +29,7 @@ So what should we do now, in my opinion?
 
 If this is done, it gives Bitcoin users the ability to move their coins to a safe output type immediately, having confidence their coins are safe even if a powerful CRQC appears, without worrying about future softforks.
 
-The best candidate for this I have seen so far is P2MR (BIP 360) in conjunction with a new PQ signature opcode and cryptographic agility (multiple branches with different signature schemes). This combination gives us the ability to say: Move your coins to this output type, and as long as you do not reveal your non-PQ-safe public key (do not reuse addresses):
+The best candidate for this I have seen so far is P2MR (BIP 360) in conjunction with a new PQ signature opcode and [cryptographic agility (multiple branches with different signature schemes)](https://youtu.be/QoIqsKgqfHg?t=6772). This combination gives us the ability to say: Move your coins to this output type, and as long as you do not reveal your non-PQ-safe public key (do not reuse addresses):
 
 * Your coins will be safe in the presence of a CRQC, even if there is no future soft fork to Bitcoin (for both short and long exposure attacks!)
 * You can continue to use small, fast Schnorr signatures to move your coins for as long as a CRQC is not on the immediate horizon (and your coins are still PQ-safe!)
@@ -59,7 +59,7 @@ Most importantly, we do not have to decide what to do with people who are unlike
 
 ![Roadmap for making coins PQ-safe](https://nehanarula.org/assets/pq-safe-bitcoin.png)
 
-*Proposed roadmap for mitigations. The actions in the blue dashed boxes help with the blue triangle; the actions in the purple dashed boxes are only needed for the purple trapezoid. We cannot have PQ-safe outputs until the first activation happens; we do not need to consider whether or not to freeze coins until closer to Q-Day. Even if the second soft fork doesn’t activate, or we can’t reach agreement, the blue triangle Bitcoin is PQ-safe. Inspired by a slide from Ethan Heilman’s Cryptographic Agility talk, which you can see once recordings come online from the 2026 MIT Bitcoin Expo or 2026 OPNEXT.*
+*Proposed roadmap for mitigations. The actions in the blue dashed boxes help with the blue triangle; the actions in the purple dashed boxes are only needed for the purple trapezoid. We cannot have PQ-safe outputs until the first activation happens; we do not need to consider whether or not to freeze coins until closer to Q-Day. Even if the second soft fork doesn’t activate, or we can’t reach agreement, the blue triangle Bitcoin is PQ-safe. Inspired by a slide from [Ethan Heilman’s Cryptographic Agility talk](https://youtu.be/QoIqsKgqfHg?t=6772) from the 2026 MIT Bitcoin Expo or 2026 OPNEXT.*
 
 
 # Counterarguments
