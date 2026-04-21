@@ -32,11 +32,11 @@ If this is done, it gives Bitcoin users the ability to move their coins to a saf
 The best candidate for this I have seen so far is P2MR (BIP 360) in conjunction with a new PQ signature opcode and cryptographic agility (multiple branches with different signature schemes). This combination gives us the ability to say: Move your coins to this output type, and as long as you do not reveal your non-PQ-safe public key (do not reuse addresses):
 
 * Your coins will be safe in the presence of a CRQC, even if there is no future soft fork to Bitcoin (for both short and long exposure attacks!)
-* You can continue to use small, fast ECDSA or Schnorr signatures to move your coins for as long as a CRQC is not on the immediate horizon (and your coins are still PQ-safe!)
+* You can continue to use small, fast Schnorr signatures to move your coins for as long as a CRQC is not on the immediate horizon (and your coins are still PQ-safe!)
 
 This is great. The downsides are the following:
 
-* If you reveal the ECDSA or Schnorr public keys inside your P2MR, this does not help keep your coins safe in the presence of a CRQC *unless there is a future soft fork shutting off the insecure signature schemes*. Revealing public keys might be something that certain wallets/custodial flows do in order to reuse addresses. But you can’t do that. If you think *all* users will do that anyway, then might as well not bother and rely on a future soft fork shutting off ECC anyway. If you think everyone does address reuse, this is equivalent in security to an alternative proposal, P2TRv2. 
+* If you reveal the Schnorr public keys inside your P2MR, this does not help keep your coins safe in the presence of a CRQC *unless there is a future soft fork shutting off the insecure signature schemes*. Revealing public keys might be something that certain wallets/custodial flows do in order to reuse addresses. But you can’t do that. If you think *all* users will do that anyway, then might as well not bother and rely on a future soft fork shutting off ECC anyway. If you think everyone does address reuse, this is equivalent in security to an alternative proposal, P2TRv2. 
 * This eliminates one of the so-called efficient privacy benefits of P2TR. Namely, this eliminates the key spend path, which previously you could use when spending the output to pretend like there weren’t other spending conditions, even if there were. Eliminating this leaks exactly 1 additional bit of information about the output (other contract paths exist or not). If you really care, you can avoid this leak in P2MR with an additional 32 bytes, but you are losing the efficiency argument, so the incentives are no longer aligned for this to be the default.
 
 These downsides, for the ability to say that you can go away and not come back for a long time and your coins are safe in the presence of a CRQC, seem reasonable to me. The efficient privacy loss part is annoying, but maybe we can get it back later once we are all using PQ signatures.
@@ -107,5 +107,7 @@ Second, we should make progress as best we can on this question now, but also ac
 # Acknowledgements
 
 Thanks to Ethan Heilman for feedback on this post. No endorsement implied, all mistakes my own.
+
+**Edit 4/21**: Thanks to Antoine Poinsot for pointing out according to BIP 360, Schnorr is the only signature option since outputs are confined to tapscript. Removed references to ECDSA above.
 
 # Footnotes
