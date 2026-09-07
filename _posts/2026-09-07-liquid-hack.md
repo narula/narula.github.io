@@ -156,4 +156,4 @@ checks. It's unfortunate that didn't happen here.
 
 ## Updates
 
-The whitehat hackers have returned [3,400 BTC](https://x.com/mononautical/status/2096989843645726942).
+The whitehat hackers have returned 3,400 BTC out of the ~4,000 BTC ([mempool.space](https://mempool.space/tx/a6d697a25266ce3c78774fd1d75f896b7af522ada209b0f6228ea497bc49a46d)).
