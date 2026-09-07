@@ -6,13 +6,13 @@ date: 2026-09-07 12:47:00
 comments: true
 ---
 
-Yesterday Liquid, a federated sidechain run by Blockstream, was compromised and 4,000 BTC was taken from its bridge by a whitehat hacker:
+Yesterday Liquid, a federated sidechain created by Blockstream, was compromised and 4,000 BTC was taken from its bridge by a whitehat hacker:
 
 <blockquote class="twitter-tweet"><p lang="en" dir="ltr">We are aware of a security incident on <a href="https://x.com/Liquid_BTC?ref_src=twsrc%5Etfw">@Liquid_BTC</a>. Purported white-hat hackers have withdrawn ~4,000 BTC (~$320 million) from the Liquid Federation wallet. The <a href="https://x.com/Blockstream?ref_src=twsrc%5Etfw">@Blockstream</a> team is working on contacting them on-chain with a signed message.<br><br>What we know so far is that the funds…</p>&mdash; Liquid Network 🌊 (@Liquid_BTC) <a href="https://x.com/Liquid_BTC/status/2096696272447218108?ref_src=twsrc%5Etfw">September 6, 2026</a></blockquote> <script async src="https://platform.x.com/widgets.js" charset="utf-8"></script>
 
 This is a very quick post on what happend and a few thoughts. This is all unfolding, so it's quite likely I got something wrong. I'll try to post updates and corrections quickly as I understand them. Also, please keep in mind that Bitcoin itself was not compromised. As far as I know, this has nothing to do with a bug or issue in Bitcoin itself.
 
-There are a few important things to understand how about this hack:
+There are a few important things to understand about this hack:
 
 ## The bug
 
@@ -28,7 +28,7 @@ to ensure this property about the transaction -- the raw amounts are
 not visible.
 
 This is done using a Pedersen commitment and range proof. The Pedersen
-commitment proves that the inputs and outputs balance, while the range
+commitment lets one check that the inputs and outputs balance, while the range
 proof ensures that you aren't playing a sneaky trick where you use
 negative numbers to inflate supply. For example, you could spend a
 10 value input and create two outputs, one -4000 and one +4010, and
@@ -36,7 +36,7 @@ abandon the -4000 output. The Pedersen check will pass, but you've now
 created 4000 new units of money out of nowhere. At a high level, the
 range proof makes sure there are no negative numbers.
 
-Range proofs are expensive to verify, so it makes sense to cache them
+Range proofs are expensive to verify, so it makes sense to cache the output of verification 
 if you can. This caching was [implemented
 incorrectly](https://github.com/ElementsProject/elements/commit/c26d719c29),
 and the whitehat hacker was able to cleverly circumvent the range
@@ -82,13 +82,13 @@ addresses](https://help.blockstream.com/liquid-network/faqs/what-is-a-liquid-peg
 Every functionary checks these two things, and both of these checks
 passed, because in the peg-out transactions the whitehat hacker was
 burning the fabricated L-BTC they created above.  The withdrawal was
-to an authorized PAK owned by a service called [Sideswap](https://sideswap.io/), which
+to an authorized PAK owned by a service called [SideSwap](https://sideswap.io/), which
 proxies Liquid withdrawals for users who don't have a PAK.
 
 
-## Sideswap
+## SideSwap
 
-Unfortunately, Sideswap didn't seem to implement any guardrails or
+Unfortunately, SideSwap didn't seem to implement any guardrails or
 brakes beyond "this was valid and signed appropriately by the
 functionaries" and didn't seem to notice or care that they received
 almost all the BTC in Liquid. So they happily further transferred the
@@ -145,7 +145,7 @@ I am not a lawyer, none of this is legal or financial advice.
 **Cryptographic privacy (without guardrails?) might be too scary.**
 This makes me sad, because I care deeply about building
 cryptographically privacy-preserving financial systems. But it might
-just be too risky. At the very least, We need a lot of guardrails
+just be too risky. At the very least, we need a lot of guardrails
 around them, like speed bumps on withdrawals and many defense-in-depth
 checks. It's unfortunate that didn't happen here.
 
