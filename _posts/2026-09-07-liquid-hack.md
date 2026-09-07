@@ -102,7 +102,7 @@ stuff up.
 
 ## Takeaways
 
-**Formal verification of cryptography wouldn't have helped.** There
+**Formal verification of cryptography wouldn't have helped in this case.** There
 was a bug here connected to cryptographic machinery, but it was a
 cache-key collision bug. Unfortunately, properties like integrity
 against inflation are a property of the _system as a whole_. Formally
@@ -111,12 +111,17 @@ would need to verify the whole system _around_ the code. This is much,
 much more challenging. I don't think anyone in crypto is actually
 verifying databases, file systems, networking, or caches.
 
+That said, any formal verification is certainly a good idea! There
+is a lot of value to formally verifying components, even if you can't
+formally verify _everything_. But it's important to remember it's not
+a panacea.
+
 **Federation is security theater?** There could have been 10,000 or
 100,000 functionaries in the federation and it wouldn't have helped
-security, at least not in a meaningful way. I'm being a little loose
-with this; apparently different nodes were running slightly different
-versions of Elements (some were fixed?) and so [Liquid actually forked
-on the block containing the inflation
+security in this case, at least not in a meaningful way. I'm being a
+little loose with this; apparently different nodes were running
+slightly different versions of Elements (some were fixed?) and so
+[Liquid actually forked on the block containing the inflation
 transaction](https://x.com/wiz/status/2096706364206887049). But
 clearly overall security is not linear in the number in the
 federation!
