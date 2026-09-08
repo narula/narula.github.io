@@ -27,19 +27,19 @@ thin air. Because the transactions are shielded, this is the _only_ way
 to ensure this property about the transaction -- the raw amounts are
 not visible.
 
-This is done using a Pedersen commitment and range proof. The Pedersen
+This is done using a Pedersen commitment and range proofs. The Pedersen
 commitment lets one check that the inputs and outputs balance, while the range
-proof ensures that you aren't playing a sneaky trick where you use
-negative numbers to inflate supply. For example, you could spend a
+proofs ensure that you aren't playing a sneaky trick where you use
+negative numbers to inflate supply. For example, without range proofs, you could spend a
 10 value input and create two outputs, one -4000 and one +4010, and
 abandon the -4000 output. The Pedersen check will pass, but you've now
-created 4000 new units of money out of nowhere. At a high level, the
+created 4000 new units of money out of nowhere. At a high level, a
 range proof makes sure there are no negative numbers.
 
 Range proofs are expensive to verify, so it makes sense to cache the output of verification 
 if you can. This caching was [implemented
 incorrectly](https://github.com/ElementsProject/elements/commit/c26d719c29),
-and the whitehat hacker was able to cleverly circumvent the range
+and the hacker was able to cleverly circumvent the range
 proof and, using something like the above, mint new L-BTC on Liquid.
 
 See [here](https://x.com/mononautical/status/2096928595432374706) for
@@ -80,7 +80,7 @@ out of the sidechain to a [pre-specified set of
 addresses](https://help.blockstream.com/liquid-network/faqs/what-is-a-liquid-peg-out).
 
 Every functionary checks these two things, and both of these checks
-passed, because in the peg-out transactions the whitehat hacker was
+passed, because in the peg-out transactions the hacker was
 burning the fabricated L-BTC they created above.  The withdrawal was
 to an authorized PAK owned by a service called [SideSwap](https://sideswap.io/), which
 proxies Liquid withdrawals for users who don't have a PAK.
@@ -92,10 +92,10 @@ Unfortunately, SideSwap didn't seem to implement any guardrails or
 brakes beyond "this was valid and signed appropriately by the
 functionaries" and didn't seem to notice or care that they received
 almost all the BTC in Liquid. So they happily further transferred the
-BTC to the whitehat hacker on the Bitcoin blockchain (none of their
+BTC to the hacker on the Bitcoin blockchain (none of their
 keys were compromised either). Finit.
 
-Note that the whitehat hackers have indicated they intend to return
+Note that the hackers have indicated they intend to return
 "most" of the funds. This communication is all playing out in
 OP_RETURN messages on the Bitcoin blockchain. You can't make this
 stuff up.
@@ -120,8 +120,10 @@ a panacea.
 100,000 functionaries in the federation and it wouldn't have helped
 security in this case, at least not in a meaningful way. I'm being a
 little loose with this; apparently different nodes were running
-slightly different versions of Elements (some were fixed?) and so
-[Liquid actually forked on the block containing the inflation
+slightly different versions of Elements (older versions did not have
+the exploited bug, which was introduced in an attempted fix to a
+different bug?) and so [Liquid actually forked on the block containing
+the inflation
 transaction](https://x.com/wiz/status/2096706364206887049). But
 clearly overall security is not linear in the number in the
 federation!
@@ -156,4 +158,4 @@ checks. It's unfortunate that didn't happen here.
 
 ## Updates
 
-The whitehat hackers have returned 3,400 BTC out of the ~4,000 BTC ([mempool.space](https://mempool.space/tx/a6d697a25266ce3c78774fd1d75f896b7af522ada209b0f6228ea497bc49a46d)).
+2026-09-07 The hackers have returned 3,400 BTC out of the ~4,000 BTC ([mempool.space](https://mempool.space/tx/a6d697a25266ce3c78774fd1d75f896b7af522ada209b0f6228ea497bc49a46d)).
