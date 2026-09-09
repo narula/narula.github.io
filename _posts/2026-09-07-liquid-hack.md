@@ -159,3 +159,9 @@ checks. It's unfortunate that didn't happen here.
 ## Updates
 
 2026-09-07 The hackers have returned 3,400 BTC out of the ~4,000 BTC ([mempool.space](https://mempool.space/tx/a6d697a25266ce3c78774fd1d75f896b7af522ada209b0f6228ea497bc49a46d)).
+
+2026-09-09 SideSwap [acknowledges](https://x.com/side_swap/status/2097696562352722304) they should have had size, velocity, and origin checks on pegouts, and returns their 4 BTC fee on the order to the Liquid federation.
+
+2026-09-09 Negotiations continue for the remaining BTC on the Bitcoin blockchain. The hackers seem to be getting [frustrated](https://mempool.space/tx/f7055f6c8dd00f404e48c12483ae740180f658db206733505bb27b015e579588?showDetails=true#vin=5) with the Liquid negotiators: 
+
+<blockquote>Your dereliction of duty is obvious that you allocated only $1.5M (maybe even 0) to secure $5B assets. This is a flagrant neglect of security and a sign of complete mismanagement. You SHALL pay 10% using your own money as bug bounty or you will cause all your holders a 15% loss for your irresponsibility and stinginess. Even companies that participate in bug bounty programs cannot guarantee complete security, let alone one like yours that remains delusional, greedy, and arrogant to this very day. Anyway we are going to publish the privatekey to decrypt our conversations afterwards.</blockquote>
