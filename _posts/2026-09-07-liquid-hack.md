@@ -165,3 +165,6 @@ checks. It's unfortunate that didn't happen here.
 2026-09-09 Negotiations continue for the remaining BTC on the Bitcoin blockchain. The hackers seem to be getting [frustrated](https://mempool.space/tx/f7055f6c8dd00f404e48c12483ae740180f658db206733505bb27b015e579588?showDetails=true#vin=5) with the Liquid negotiators: 
 
 <blockquote>Your dereliction of duty is obvious that you allocated only $1.5M (maybe even 0) to secure $5B assets. This is a flagrant neglect of security and a sign of complete mismanagement. You SHALL pay 10% using your own money as bug bounty or you will cause all your holders a 15% loss for your irresponsibility and stinginess. Even companies that participate in bug bounty programs cannot guarantee complete security, let alone one like yours that remains delusional, greedy, and arrogant to this very day. Anyway we are going to publish the privatekey to decrypt our conversations afterwards.</blockquote>
+
+
+2026-09-18 Liquid resumed some limited transaction functionality. However, [it is still not fully backed](https://x.com/Liquid_BTC/status/2100696334596452426) (only 3,400 BTC backing ~4,000 L-BTC) and users cannot withdraw their Bitcoin.
